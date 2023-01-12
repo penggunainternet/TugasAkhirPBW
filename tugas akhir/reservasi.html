@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="resto dinus melayani reservasi tempat" />
+    <meta name="keywords" content="resto dinus,resto dinus,restoran,udinus,reservasi, reservasi resto dinus">
+    <meta name="author" content="Ahmad Bintang Saputra">
+    <title>reservasi page</title>
+    <!-- CSS Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <!-- CSS External -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold fs-4" href="#">RESTO DINUS</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav fw-semibold">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-uppercase fs-6"
+                  aria-current="true"
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase fs-6" href="index.html#menu"
+                  >Menu</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-uppercase fs-6 active"
+                  href="/reservasi.html"
+                  >Reservasi</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase fs-6" href="/lokasi.html"
+                  >Tentang Kami</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- reservasi -->
+    <div class="paper">
+      <h4 style="text-align: center; padding: 30px">RESERVASI</h4>
+      <form action="">
+        <table>
+          <tr>
+            <td>NAMA</td>
+            <td><input type="text" size="40" /></td>
+          </tr>
+          <tr>
+            <td>NO TELEPON</td>
+            <td><input type="number" /></td>
+          </tr>
+          <tr>
+            <td>JUMLAH TAMU</td>
+            <td><input type="number" /></td>
+          </tr>
+          <tr>
+            <td>TANGGAL</td>
+            <td><input type="date" /></td>
+          </tr>
+          <tr>
+            <td>WAKTU</td>
+            <td><input type="time" /></td>
+          </tr>
+        </table>
+        <!-- Button trigger modal -->
+        <button
+          
+          type="reset"
+          
+          class="btn btn-secondary btn-sm"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+          style="margin-left: 80%; margin-top: 80px"
+        >
+          SUBMIT
+        </button>
+      </form>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h7 style="padding-left: 20%;" class="modal-title" id="exampleModalLabel">RESERVASI SUKSES</h7 style="padding-left: 20%;">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body" style="padding: 20px;"><P>Silahkan datang pada waktu yang telah ditentukan</P></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer bg-dark p-3 bottom  ">
+      <div class="container">
+        <div class="row text-light text-center">
+          <div class="col-6 text-lg-start text-sm-start">
+            Copyright © 2022 RESTO DINUS All Rights Reserved
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JS Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var myModal = document.getElementById("myModal");
+      var myInput = document.getElementById("myInput");
+
+      myModal.addEventListener("shown.bs.modal", function () {
+        myInput.focus();
+      });
+    </script>
+  </body>
+</html>
